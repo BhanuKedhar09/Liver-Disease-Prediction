@@ -1,0 +1,101 @@
+118 292 236
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Train File processed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Validation File processed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+[<File file id=file-ujokT36IHAdtiyXyXwtNn3iu at 0x16c8dbe90> JSON: {
+  "object": "file",
+  "id": "file-ujokT36IHAdtiyXyXwtNn3iu",
+  "purpose": "fine-tune",
+  "filename": "foo_validate.jsonl",
+  "bytes": 16311,
+  "created_at": 1698881563,
+  "status": "processed",
+  "status_details": null
+}, <File file id=file-BZIUkmeea6o2JNZxhdBwOakR at 0x16c8da0f0> JSON: {
+  "object": "file",
+  "id": "file-BZIUkmeea6o2JNZxhdBwOakR",
+  "purpose": "fine-tune",
+  "filename": "foo_train.jsonl",
+  "bytes": 48934,
+  "created_at": 1698881563,
+  "status": "processed",
+  "status_details": null
+}]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+my_org_models_ids_before_deleting []
+------------------------------------------------------------------------------------------------------------------------------------------------------
+after_deleting_models_list [<Model model id=ft:gpt-3.5-turbo-0613:personal:ldc-final:8GCaBmDY at 0x16cc2b9b0> JSON: {
+  "id": "ft:gpt-3.5-turbo-0613:personal:ldc-final:8GCaBmDY",
+  "object": "model",
+  "created": 1698872307,
+  "owned_by": "user-flnu6eg6zogaqvaydrcywn39",
+  "permission": [
+    {
+      "id": "snapperm-3p67SKpHZAWg6maOQ7l1fKUc",
+      "object": "model_permission",
+      "created": 1698872307,
+      "allow_create_engine": true,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": true,
+      "organization": "org-T235lb7vYT32FxvDLk6ASY6e",
+      "group": null,
+      "is_blocking": false
+    }
+  ],
+  "root": "gpt-3.5-turbo-0613",
+  "parent": "gpt-3.5-turbo-0613"
+}]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Model already exists
+{
+  "id": "ft:gpt-3.5-turbo-0613:personal:ldc-final:8GCaBmDY",
+  "object": "model",
+  "created": 1698872307,
+  "owned_by": "user-flnu6eg6zogaqvaydrcywn39",
+  "permission": [
+    {
+      "id": "snapperm-3p67SKpHZAWg6maOQ7l1fKUc",
+      "object": "model_permission",
+      "created": 1698872307,
+      "allow_create_engine": true,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": true,
+      "organization": "org-T235lb7vYT32FxvDLk6ASY6e",
+      "group": null,
+      "is_blocking": false
+    }
+  ],
+  "root": "gpt-3.5-turbo-0613",
+  "parent": "gpt-3.5-turbo-0613"
+}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+[1 2 1 2 2 2 1 2 1 2 1 2 2 1 1 2 1 2 2 1 1 1 1 1 1 2 2 1 2 2 1 1 1 1 1 2 2
+ 2 1 2 2 1 1 2 2 2 1 1] 48
+------------------------------------------------------------------------------------------------------------------------------------------------------
+[1, 2, 1, 2, 2, 1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1] 48 48
+------------------------------------------------------------------------------------------------------------------------------------------------------
+AI_model_accuracy 0.7708333333333334
+------------------------------------------------------------------------------------------------------------------------------------------------------
+AI_model_f1_score 0.7843137254901961
+------------------------------------------------------------------------------------------------------------------------------------------------------
+AI_model_confusion_matrix [[20  5]
+ [ 6 17]]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+           1       0.77      0.80      0.78        25
+           2       0.77      0.74      0.76        23
+
+    accuracy                           0.77        48
+   macro avg       0.77      0.77      0.77        48
+weighted avg       0.77      0.77      0.77        48
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
