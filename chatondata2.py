@@ -9,6 +9,7 @@ import openai
 import requests
 import pandas as pd
 import numpy as np
+import config
 from langchain.docstore.document import Document
 from langchain.document_loaders import CSVLoader
 from langchain.document_loaders import TextLoader
@@ -26,7 +27,7 @@ from langchain.retrievers import ChatGPTPluginRetriever
 
 
 
-api_key = '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'
+api_key = config.api_key
 openai.api_key = api_key
 original_data = pd.read_csv("train.csv")
 
